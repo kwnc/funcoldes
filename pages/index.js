@@ -13,13 +13,25 @@ export default function Home(props) {
         <div className={styles.container}>
             <Head>
                 <title>Funcoldes</title>
-                <Link href="/mision" locale="en">
-                    <a>To another</a>
+                <Link href="/mission" locale="es">
+                    <a>Mision</a>
                 </Link>
             </Head>
 
             <main className={styles.main}>
                 <Hero/>
+                <div className="center-container">
+                    <div>
+                        <Link href="/" locale="en">
+                            <a>Cambiar a ingles</a>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link href="/" locale="es">
+                            <a>Change to spanish</a>
+                        </Link>
+                    </div>
+                </div>
                 <p>current locale: {locale}</p>
                 <p>Default locale: {defaultLocale}</p>
                 <p>Configured locales: {JSON.stringify(locales)}</p>
