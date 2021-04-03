@@ -1,7 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+# Funcoldes - non profit organization in Colombia
 ![image](https://user-images.githubusercontent.com/24979459/113489030-fbdb8a00-94c1-11eb-9de8-981a1c64e109.png)
-## Funcoldes - non profit organization in Colombia
 
 ## Getting Started
 
