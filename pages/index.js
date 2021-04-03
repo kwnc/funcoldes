@@ -12,20 +12,24 @@ const Homepage = () => {
     const {t} = useTranslation('home-page')
 
     return (
-        <Layout>
+        <div>
             <Head>
                 <title>Funcoldes | Home</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
             </Head>
             <Nav/>
-            <main className={styles.main}>
-                <Hero/>
-                <p>{t("we-are")}</p>
-                <p>{t('objective')}</p>
-                <p>{t('experience')}</p>
-            </main>
-            <Footer/>
-        </Layout>
+
+            <Layout>
+
+                <main className={styles.main}>
+                    <Hero/>
+                    <p>{t("we-are")}</p>
+                    <p>{t('objective')}</p>
+                    <p>{t('experience')}</p>
+                </main>
+                <Footer/>
+            </Layout>
+        </div>
     )
 }
 

@@ -9,23 +9,25 @@ export default function Mission() {
     const {t} = useTranslation('mission')
 
     return (
-        <Layout>
+        <div>
             <Head>
                 <title>Funcoldes | {t('mission')}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
             </Head>
             <Nav/>
-            <div id="hero" className="pt-24 bg-fixed bg-contain bg-auto bg-no-repeat md:py-50 sm:pb-50">
-                <h1>{t('mission')}</h1>
-                <p>{t('first-p')}</p>
+            <Layout>
+                <div id="hero" className="pt-24 bg-fixed bg-contain bg-auto bg-no-repeat md:py-50 sm:pb-50">
+                    <h1>{t('mission')}</h1>
+                    <p>{t('first-p')}</p>
 
-                <h1>{t('our-vision')}</h1>
-                <p>{t('second-p')}</p>
+                    <h1>{t('our-vision')}</h1>
+                    <p>{t('second-p')}</p>
 
-                <h1>{t('reference')}</h1>
-                <p>{t('third-p')}</p>
-            </div>
-        </Layout>
+                    <h1>{t('reference')}</h1>
+                    <p>{t('third-p')}</p>
+                </div>
+            </Layout>
+        </div>
     )
 }
 

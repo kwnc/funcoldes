@@ -33,7 +33,7 @@ export default function Nav() {
                         locale={router.locale === 'en' ? 'es' : 'en'}
                     >
                         <button>
-                            {t('flag')}
+                            <Image src="/en-es.png" height={40} width={100} alt="EN/ES"/>
                         </button>
                     </Link>
                 </div>
