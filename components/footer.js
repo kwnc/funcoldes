@@ -10,7 +10,7 @@ function Footer() {
             <div className="container mx-auto px-8">
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
-                        <Image src='/logo-vertical.jpg' className="w-3/4" height={200} width={200} alt="logo"/>
+                        <Image src='/logo-description.jpg' className="w-4/5" height={100} width={500} alt="logo"/>
                     </div>
                     <div className="flex-1">
                         <b className="text-gray-500 md:mb-6">Funcoldes &copy; {new Date().getFullYear()} | {t('description')}
