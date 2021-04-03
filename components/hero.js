@@ -8,12 +8,12 @@ const Hero = () => {
     return (
         <Fragment>
             <div id="hero" className="bg-fixed bg-contain bg-auto bg-no-repeat">
-                <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center sm:py-40">
+                <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                     <div
                         className="flex flex-col w-full md:w-2/5 justify-center items-start text-center text-black md:text-left py-20 sm:py-50">
-                        <h2 className="my-4 text-5xl font-bold leading-tight">
+                        <h1 className="my-4 text-6xl font-bold leading-tight">
                             {t('hero')}
-                        </h2>
+                        </h1>
                     </div>
                 </div>
             </div>

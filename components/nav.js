@@ -44,15 +44,15 @@ export default function Nav() {
                     <span className="navicon bg-grey-darkest flex items-center relative"/>
                 </label>
 
-                <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+                <ul className="menu border-b flex justify-end list-reset w-full md:w-auto items-center justify-between">
                     <li className="border-t md:border-none">
                         <Link href="/mission"
-                              className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"><a>{t('mission')}</a></Link>
+                              className="block md:inline-block px-4 py-3 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a className='p-5'>{t('mission')}</a></Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href="/impact"
-                              className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"><a>{t('impact')}</a></Link>
+                              className="block md:inline-block px-4 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a className='p-5'>{t('impact')}</a></Link>
                     </li>
                 </ul>
             </nav>

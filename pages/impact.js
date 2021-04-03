@@ -17,8 +17,20 @@ export default function Impact() {
             <Nav/>
             <Layout>
                 <div id="hero" className="pt-24 bg-fixed bg-contain bg-auto bg-no-repeat md:py-50 sm:pb-50">
-                    <h1>{t('h1')}</h1>
-                    <p>{t('p')}</p>
+                    <h2 className="text-5xl py-6">{t('h1')}</h2>
+                    <ul className="list-disc">
+                        <li>{t('b1')}</li>
+                        <li>{t('b2')}</li>
+                        <li>{t('b3')}</li>
+                        <li>{t('b4')}</li>
+                        <li>{t('b5')}</li>
+                        <li>{t('b6')}</li>
+                        <li>{t('b7')}</li>
+                        <li>{t('b8')}</li>
+                        <li>{t('b9')}</li>
+                        <li>{t('b10')}</li>
+                        <li>{t('b12')}</li>
+                    </ul>
                 </div>
             </Layout>
         </div>
