@@ -1,0 +1,46 @@
+import * as React from "react"
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default function Nav() {
+    return (
+        <header>
+            <nav className="nav flex flex-wrap items-center justify-between px-4">
+                <a href="https://checkout.wompi.co/l/VPOS_Rh4UTC" target="_blank" rel="noreferrer">
+                    <button
+                        className="flex justify-end mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Donar
+                    </button>
+                </a>
+
+                <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+                    <Link href="/">
+                        <a>
+                            <Image className="h-20 fill-current inline rounded-2xl" src="/logo-vertical.jpg"
+                                   alt="logo" width={100} height={100}/>
+                        </a>
+                    </Link>
+                </div>
+
+                <input className="menu-btn hidden" type="checkbox" id="menu-btn"/>
+                <label className="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+                       htmlFor="menu-btn">
+                    <span className="navicon bg-grey-darkest flex items-center relative"/>
+                </label>
+
+                <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+                    <li className="border-t md:border-none">
+                        <Link href="/mission"
+                              className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"><a>Mission</a></Link>
+                    </li>
+
+                    <li className="border-t md:border-none">
+                        <Link href="/impact"
+                              className="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker"><a>Nuestro
+                            impacto</a></Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
