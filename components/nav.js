@@ -11,21 +11,21 @@ export default function Nav() {
     return (
         <header>
             <nav className="nav flex flex-wrap items-center justify-between px-4">
+                <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+                    <Link href="/">
+                        <a>
+                            <Image className="h-20 fill-current inline rounded-2xl" src="/logo-vertical.jpg"
+                                   alt="logo" width={150} height={150}/>
+                        </a>
+                    </Link>
+                </div>
+
                 <a href="https://checkout.wompi.co/l/VPOS_Rh4UTC" target="_blank" rel="noreferrer">
                     <button
                         className="flex justify-end mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         {t('donate')}
                     </button>
                 </a>
-
-                <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
-                    <Link href="/">
-                        <a>
-                            <Image className="h-20 fill-current inline rounded-2xl" src="/logo-vertical.jpg"
-                                   alt="logo" width={100} height={100}/>
-                        </a>
-                    </Link>
-                </div>
 
                 <div className="center-container">
                     <Link
@@ -44,15 +44,17 @@ export default function Nav() {
                     <span className="navicon bg-grey-darkest flex items-center relative"/>
                 </label>
 
-                <ul className="menu border-b flex justify-end list-reset w-full md:w-auto items-center justify-between">
+                <ul className="menu border-b flex justify-end list-reset w-full md:w-auto items-center justify-between text-center">
                     <li className="border-t md:border-none">
                         <Link href="/mission"
-                              className="block md:inline-block px-4 py-3 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a className='p-5'>{t('mission')}</a></Link>
+                              className="block md:inline-block px-4 py-3 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a
+                            className='p-5 text-3xl'>{t('mission')}</a></Link>
                     </li>
 
                     <li className="border-t md:border-none">
                         <Link href="/impact"
-                              className="block md:inline-block px-4 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a className='p-5'>{t('impact')}</a></Link>
+                              className="block md:inline-block px-4 p-10 no-underline text-grey-darkest hover:text-grey-darker"><a
+                            className='p-5 text-3xl'>{t('impact')}</a></Link>
                     </li>
                 </ul>
             </nav>
