@@ -27,7 +27,6 @@ const Homepage = () => {
                     <p>{t('objective')}</p>
                     <p>{t('experience')}</p>
                 </main>
-                <Footer/>
             </Layout>
         </div>
     )
