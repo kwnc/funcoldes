@@ -1,15 +1,14 @@
 import Head from "next/head";
-import Link from "next/link"
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 import styles from '../styles/Home.module.css'
 import Hero from "../components/hero";
-import {useRouter} from "next/router";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import {useTranslation} from "next-i18next";
 
-export default function Home(props) {
-    const router = useRouter()
-    const {locale, locales, defaultLocale} = router
+const Homepage = () => {
+    const {t} = useTranslation('home-page')
 
     return (
         <div>
@@ -20,22 +19,7 @@ export default function Home(props) {
             <Nav/>
             <main className={styles.main}>
                 <Hero/>
-                <div className="center-container">
-                    <div>
-                        <Link href="/" locale="en">
-                            <a>Cambiar a ingles</a>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link href="/" locale="es">
-                            <a>Change to spanish</a>
-                        </Link>
-                    </div>
-                </div>
-                <p>Somos una Organización sin ánimo de lucro, de nacionalidad Colombiana, constituida el 25 de Marzo
-                    de
-                    2004,
-                    en Bogotá.</p>
+                <p>{t("we-are")}</p>
                 <p>El objetivo y la trascendencia de la entidad ha sido en el acompañamiento de entidades Privadas,
                     Públicas y
                     Organismos Internacionales, en programas de capacitación, Informal, formación científica y
@@ -60,3 +44,11 @@ export default function Home(props) {
         </div>
     )
 }
+
+export const getStaticProps = async ({locale}) => ({
+    props: {
+        ...await serverSideTranslations(locale, ['common', 'home-page', 'footer']),
+    },
+})
+
+export default Homepage

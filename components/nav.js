@@ -1,8 +1,13 @@
 import * as React from "react"
 import Link from 'next/link'
 import Image from 'next/image'
+import {useRouter} from "next/router";
+import {useTranslation} from "next-i18next";
 
 export default function Nav() {
+    const router = useRouter()
+    const {t} = useTranslation('common')
+
     return (
         <header>
             <nav className="nav flex flex-wrap items-center justify-between px-4">
@@ -19,6 +24,17 @@ export default function Nav() {
                             <Image className="h-20 fill-current inline rounded-2xl" src="/logo-vertical.jpg"
                                    alt="logo" width={100} height={100}/>
                         </a>
+                    </Link>
+                </div>
+
+                <div className="center-container">
+                    <Link
+                        href='/'
+                        locale={router.locale === 'en' ? 'es' : 'en'}
+                    >
+                        <button>
+                            <Image src={t('flag')} alt="flag" width={40} height={40}/>
+                        </button>
                     </Link>
                 </div>
 
