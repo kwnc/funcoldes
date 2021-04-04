@@ -6,11 +6,11 @@ function Footer() {
     const {t} = useTranslation('footer')
 
     return (
-        <footer className="bg-white">
+        <footer>
             <div className="container mx-auto px-8">
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
-                        <Image src='/logo-description.jpg' className="w-4/5" height={100} width={500} alt="logo"/>
+                        <Image src='/logo-description.jpg' className="w-4/5" height={130} width={650} alt="logo"/>
                     </div>
                     <div className="flex-1">
                         <b className="text-gray-500 md:mb-6">Funcoldes &copy; {new Date().getFullYear()} | {t('description')}
