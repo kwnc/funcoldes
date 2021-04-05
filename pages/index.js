@@ -14,7 +14,6 @@ const Homepage = () => {
         <div>
             <Head>
                 <title>{t('title')}</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
             </Head>
             <Nav/>
 
@@ -31,10 +30,18 @@ const Homepage = () => {
     )
 }
 
-export const getStaticProps = async ({locale}) => ({
-    props: {
-        ...await serverSideTranslations(locale, ['common', 'home-page', 'footer', 'nav']),
-    },
-})
+export const getStaticProps = async (
+    {
+        locale
+    }
+) => (
+    {
+        props: {
+            ...
+                await serverSideTranslations(locale, ['common', 'home-page', 'footer', 'nav']),
+        }
+        ,
+    }
+)
 
 export default Homepage
