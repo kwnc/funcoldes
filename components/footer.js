@@ -21,32 +21,32 @@ function Footer() {
                                 href='/'
                                 locale={router.locale = 'es'}
                             >
-                                <button className="px-5">
+                                <a className="px-5">
                                     Español
-                                </button>
+                                </a>
                             </Link>
                             <Link
                                 href='/'
                                 locale={router.locale = 'en'}
                             >
-                                <button className="px-5">
+                                <a className="px-5">
                                     English
-                                </button>
+                                </a>
                             </Link>
                             <Link
                                 href='/'
                                 locale={router.locale = 'pl'}
                             >
-                                <button className="px-5">
+                                <a className="px-5">
                                     Polski
-                                </button>
+                                </a>
                             </Link>
                         </div>
 
                         <b className="py-4 text-gray-500 md:mb-6">Funcoldes &copy; {new Date().getFullYear()} | {t('description')}
                             <a
                                 href="https://github.com/kwnc" target="_blank" rel="noreferrer"
-                                className="text-yellow-400">Konrad</a></b>
+                                className="text-yellow-400"> Konrad</a></b>
                     </div>
                 </div>
             </div>
