@@ -1,8 +1,4 @@
 {
-  "change-locale": "Change language",
-  "to-second-page": "Mision",
   "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server",
-  "title": "Funcoldes | Pagina",
-  "flag": "English"
+  "error-without-status": "An error occurred on the server"
 }

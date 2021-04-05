@@ -4,7 +4,6 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import styles from '../styles/Home.module.css'
 import Hero from "../components/hero";
 import Nav from "../components/nav";
-import Footer from "../components/footer";
 import {useTranslation} from "next-i18next";
 import Layout from "../components/layout";
 
@@ -14,7 +13,7 @@ const Homepage = () => {
     return (
         <div>
             <Head>
-                <title>Funcoldes | Home</title>
+                <title>{t('title')}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
             </Head>
             <Nav/>
