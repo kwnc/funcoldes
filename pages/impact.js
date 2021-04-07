@@ -11,8 +11,7 @@ export default function Impact() {
     return (
         <div>
             <Head>
-                <title>Funcoldes | Impact</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+                <title>{t('title')}</title>
             </Head>
             <Nav/>
             <Layout>

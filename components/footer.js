@@ -22,6 +22,7 @@ function Footer() {
                                 locale={router.locale = 'es'}
                             >
                                 <a className="px-5">
+                                    <Image src='/es.png' width={20} height={20} alt='Spanish flag'/>
                                     Español
                                 </a>
                             </Link>
@@ -30,6 +31,7 @@ function Footer() {
                                 locale={router.locale = 'en'}
                             >
                                 <a className="px-5">
+                                    <Image src='/en.png' width={20} height={20} alt='English flag'/>
                                     English
                                 </a>
                             </Link>
@@ -38,6 +40,7 @@ function Footer() {
                                 locale={router.locale = 'pl'}
                             >
                                 <a className="px-5">
+                                    <Image src='/pl.png' width={20} height={20} alt='Polish flag'/>
                                     Polski
                                 </a>
                             </Link>
