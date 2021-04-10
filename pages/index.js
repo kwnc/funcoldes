@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import Layout from "../components/layout";
 import { useTranslation } from "next-i18next";
-import LanguageButton from "../components/LanguageButton";
+import LanguageMenu from "../components/LanguageMenu";
 
 const Homepage = () => {
   const { t } = useTranslation("home-page");
@@ -17,7 +17,7 @@ const Homepage = () => {
         <title>{t("title")}</title>
       </Head>
       <Layout>
-        <LanguageButton />
+        <LanguageMenu />
         <main className={styles.main}>
           <Hero />
           <p>{t("we-are")}</p>
