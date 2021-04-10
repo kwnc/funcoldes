@@ -1,47 +1,43 @@
+import React from "react";
 import Head from "next/head";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
-import Nav from "../components/nav";
-import {useTranslation} from "next-i18next";
 import Layout from "../components/layout";
+import { useTranslation } from "next-i18next";
+import LanguageButton from "../components/LanguageButton";
 
 const Homepage = () => {
-    const {t} = useTranslation('home-page')
+  const { t } = useTranslation("home-page");
 
-    return (
-        <div>
-            <Head>
-                <title>{t('title')}</title>
-            </Head>
-            <Nav/>
+  return (
+    <>
+      <Head>
+        <title>{t("title")}</title>
+      </Head>
+      <Layout>
+        <LanguageButton />
+        <main className={styles.main}>
+          <Hero />
+          <p>{t("we-are")}</p>
+          <p>{t("objective")}</p>
+          <p>{t("experience")}</p>
+        </main>
+      </Layout>
+    </>
+  );
+};
 
-            <Layout>
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, [
+      "common",
+      "home-page",
+      "footer",
+      "nav",
+    ])),
+  },
+});
 
-                <main className={styles.main}>
-                    <Hero/>
-                    <p>{t("we-are")}</p>
-                    <p>{t('objective')}</p>
-                    <p>{t('experience')}</p>
-                </main>
-            </Layout>
-        </div>
-    )
-}
-
-export const getStaticProps = async (
-    {
-        locale
-    }
-) => (
-    {
-        props: {
-            ...
-                await serverSideTranslations(locale, ['common', 'home-page', 'footer', 'nav']),
-        }
-        ,
-    }
-)
-
-export default Homepage
+export default Homepage;
