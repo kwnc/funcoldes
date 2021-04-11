@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import LanguageSwitch from "./LanguageSwitch";
 
 function Nav() {
   const { t } = useTranslation("nav");
@@ -32,6 +33,8 @@ function Nav() {
             {t("donate")}
           </button>
         </a>
+
+        <LanguageSwitch />
 
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
         <label
