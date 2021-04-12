@@ -6,7 +6,7 @@ Organization helps Colombian families in need.
 
 Project made in Next.js
 
-## Getting Started
+## Run project
 
 First, run the development server:
 
