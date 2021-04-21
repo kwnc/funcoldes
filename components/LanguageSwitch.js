@@ -11,7 +11,7 @@ const LanguageSwitch = () => {
 
   return (
     <Link href="/" locale={router.locale === "es" ? "en" : "es"}>
-      <Image src="/en-es.png" width={80} height={50} alt="en/es" />
+      <Image src="/en-es.png" width={96} height={63.75} alt="en/es" />
     </Link>
   );
 };

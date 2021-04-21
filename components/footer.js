@@ -24,7 +24,7 @@ function Footer() {
           <div className="flex-1">
             <div className="py-4 center-container content-between">
               <Link href="/" locale={(router.locale = "es")}>
-                <a className="px-5">
+                <a className="px-4">
                   <Image
                     src="/es.png"
                     width={20}
@@ -35,7 +35,7 @@ function Footer() {
                 </a>
               </Link>
               <Link href="/" locale={(router.locale = "en")}>
-                <a className="px-5">
+                <a className="px-4">
                   <Image
                     src="/en.png"
                     width={20}
@@ -46,7 +46,7 @@ function Footer() {
                 </a>
               </Link>
               <Link href="/" locale={(router.locale = "pl")}>
-                <a className="px-5">
+                <a className="px-4">
                   <Image
                     src="/pl.png"
                     width={20}
@@ -58,15 +58,14 @@ function Footer() {
               </Link>
             </div>
 
-            <b className="py-4 text-gray-500 md:mb-6">
-              Funcoldes &copy; {new Date().getFullYear()} | {t("description")}
+            <b className="py-4 text-gray-700 md:mb-6">
+              Funcoldes &copy; {new Date().getFullYear()} | {t("description")}{" "}
               <a
                 href="https://github.com/kwnc"
                 target="_blank"
                 rel="noreferrer"
-                className="text-yellow-400"
+                className="text-yellow-700"
               >
-                {" "}
                 Konrad
               </a>
             </b>
