@@ -14,7 +14,7 @@ function Nav() {
           <Link href="/">
             <a>
               <Image
-                className="h-20 fill-current inline rounded-2xl"
+                className="h-20 fill-current inline rounded-2xl transform transition hover:scale-105 duration-300 ease-in-out"
                 src="/logo-vertical.jpg"
                 alt="logo"
                 width={150}

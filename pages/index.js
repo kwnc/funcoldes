@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import Layout from "../components/layout";
 import { useTranslation } from "next-i18next";
@@ -16,7 +15,7 @@ const Homepage = () => {
         <title>{t("title")}</title>
       </Head>
       <Layout>
-        <main className={styles.main}>
+        <main>
           <Hero />
           <p>{t("we-are")}</p>
           <p>{t("objective")}</p>
