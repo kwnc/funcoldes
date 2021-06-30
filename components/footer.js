@@ -61,12 +61,12 @@ function Footer() {
             <b className="py-4 text-gray-700 md:mb-6">
               Funcoldes &copy; {new Date().getFullYear()} | {t("description")}{" "}
               <a
-                href="https://github.com/kwnc"
+                href="https://www.wenc.website/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-yellow-700"
               >
-                Konrad
+                wenc.website
               </a>
             </b>
           </div>
