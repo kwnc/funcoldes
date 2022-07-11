@@ -61,12 +61,12 @@ function Footer() {
             <b className="py-4 text-gray-700 md:mb-6">
               Funcoldes &copy; {new Date().getFullYear()} | {t("description")}{" "}
               <a
-                href="https://www.wenc.website/"
+                href="https://www.autolify.digital/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-yellow-700"
               >
-                wenc.website
+                Autolify
               </a>
             </b>
           </div>
