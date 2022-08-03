@@ -61,7 +61,7 @@ function Footer() {
             <b className="py-4 text-gray-700 md:mb-6">
               Funcoldes &copy; {new Date().getFullYear()} | {t("description")}{" "}
               <a
-                href="konradwenc.bio.link"
+                href="https://konradwenc.bio.link/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-yellow-700"
